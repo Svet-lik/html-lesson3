@@ -1,0 +1,41 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+.winter {
+    list-style-image: url(../icons/winter_16.png);
+}
+.spring {
+    list-style-image: url(../icons/spring_16.png);
+}
+.summer {
+    list-style-image: url(../icons/summer_16.png);
+}
+.autumn {
+    list-style-image: url(../icons/autumn_16.png);
+}
+
+#year {
+    list-style-type: none;
+}
+#year li::before {
+    content: ">";
+}
+.spring li {
+    margin: 10px 30px 5px 20px;
+    padding: 5px 10px;
+    background-color: aqua;
+}
+/* .spring {
+    padding: 0;
+} */
+#year .winter li::before,
+#year .spring li::before,
+#year .summer li::before,
+#year .autumn li::before {
+    content: "";
+}
+h1 {
+    font-size: 20px;
+}
